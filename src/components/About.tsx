@@ -38,9 +38,9 @@ export function About() {
           className="text-center space-y-4 mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            About <span className="text-blue-600 dark:text-blue-400">Me</span>
+            About <span className="text-red-600 dark:text-red-500">Me</span>
           </h2>
-          <div className="h-1 w-20 bg-blue-600 dark:bg-blue-400 mx-auto rounded-full" />
+          <div className="h-1 w-20 bg-red-600 dark:bg-red-500 mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -52,13 +52,13 @@ export function About() {
             className="space-y-6 text-lg text-foreground/80 leading-relaxed"
           >
             <p>
-              Hello! I&apos;m <strong>Pragati Patel</strong>, a dedicated B.Tech Information Technology student. My journey in tech is driven by an insatiable curiosity for how things work and a desire to build solutions that make a real-world impact.
+              I am a passionate Information Technology student with strong skills in full stack development, data structures, and machine learning. I enjoy building user-friendly web applications and solving real-world problems using modern technologies.
             </p>
             <p>
-              I thrive at the intersection of Artificial Intelligence and Full-Stack Development. Whether it&apos;s training a machine learning model to detect anomalies or designing a seamless web interface, I approach every project with enthusiasm and a growth mindset.
+              I am continuously learning new technologies and improving my problem-solving skills through coding challenges and project development.
             </p>
             <p>
-              When I&apos;m not coding or debugging, you can find me participating in hackathons, practicing competitive programming, or keeping up with the latest advancements in AI research.
+              My goal is to become a skilled software developer and contribute to impactful technology solutions.
             </p>
           </motion.div>
 
@@ -74,11 +74,16 @@ export function About() {
               return (
                 <div
                   key={index}
-                  className="p-6 rounded-2xl bg-foreground/5 border border-foreground/10 hover:border-blue-500/50 transition-colors"
+                  className="group relative rounded-2xl p-[1px] overflow-hidden hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] transition-all duration-300 shadow-sm"
                 >
-                  <Icon className="h-8 w-8 text-blue-600 dark:text-blue-400 mb-4" />
-                  <h3 className="font-semibold text-lg mb-2">{interest.title}</h3>
-                  <p className="text-sm text-foreground/60">{interest.desc}</p>
+                  <div className="absolute inset-[-150%] animate-[spin_4s_linear_infinite]" style={{ transformOrigin: 'center center' }}>
+                     <div className="w-full h-full bg-[conic-gradient(from_0deg,transparent_0_280deg,#ef4444_360deg)] opacity-70" />
+                  </div>
+                  <div className="relative w-full h-full bg-zinc-50 dark:bg-zinc-950 rounded-2xl p-6 z-10 flex flex-col">
+                    <Icon className="h-8 w-8 text-red-600 dark:text-red-500 mb-4" />
+                    <h3 className="font-semibold text-lg mb-2">{interest.title}</h3>
+                    <p className="text-sm text-foreground/60">{interest.desc}</p>
+                  </div>
                 </div>
               );
             })}

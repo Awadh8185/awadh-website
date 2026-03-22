@@ -13,51 +13,68 @@ export function Skills() {
   const skillCategories = [
     {
       title: "Programming Languages",
-      icon: <Code2 className="w-5 h-5 text-blue-400" />,
+      icon: <Code2 className="w-5 h-5 text-red-600 dark:text-red-500" />,
       skills: [
-        { name: "Java", icon: <FaJava className="w-4 h-4 text-red-500" /> },
-        { name: "Python", icon: <SiPython className="w-4 h-4 text-yellow-500" /> },
-        { name: "C++", icon: <SiCplusplus className="w-4 h-4 text-blue-500" /> },
-        { name: "C", icon: <SiC className="w-4 h-4 text-blue-600" /> },
+        { name: "C++", icon: <SiCplusplus className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "Java", icon: <FaJava className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "JavaScript", icon: <SiJavascript className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "Python", icon: <SiPython className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "C", icon: <SiC className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "SQL", icon: <Database className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "HTML", icon: <SiHtml5 className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "CSS", icon: <FaCss3Alt className="w-4 h-4 text-red-600 dark:text-red-500" /> },
       ],
     },
     {
-      title: "Frameworks",
-      icon: <Server className="w-5 h-5 text-purple-400" />,
+      title: "Frameworks & Libraries",
+      icon: <Server className="w-5 h-5 text-red-600 dark:text-red-500" />,
       skills: [
-        { name: "Scikit-learn", icon: <BrainCircuit className="w-4 h-4 text-green-500" /> },
-        { name: "Streamlit", icon: <BrainCircuit className="w-4 h-4 text-red-500" /> },
-        { name: "React", icon: <SiReact className="w-4 h-4 text-cyan-400" /> },
-        { name: "Node.js", icon: <SiNodedotjs className="w-4 h-4 text-green-500" /> },
-        { name: "Tailwind", icon: <FaCss3Alt className="w-4 h-4 text-cyan-400" /> },
-        { name: "HTML/CSS", icon: <SiHtml5 className="w-4 h-4 text-orange-500" /> },
+        { name: "Pandas", icon: <SiPandas className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "NumPy", icon: <SiNumpy className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "React", icon: <SiReact className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "Node.js", icon: <SiNodedotjs className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "Express", icon: <Server className="w-4 h-4 text-red-600 dark:text-red-500" /> },
       ],
     },
     {
-      title: "Tools & Platforms",
-      icon: <Database className="w-5 h-5 text-orange-400" />,
+      title: "Tools & Technologies",
+      icon: <Database className="w-5 h-5 text-red-600 dark:text-red-500" />,
       skills: [
-        { name: "MySQL", icon: <SiMysql className="w-4 h-4 text-blue-400" /> },
-        { name: "Excel", icon: <FaFileExcel className="w-4 h-4 text-green-600" /> },
-        { name: "Power BI", icon: <Database className="w-4 h-4 text-yellow-500" /> },
-        { name: "Figma", icon: <SiFigma className="w-4 h-4 text-pink-500" /> },
-        { name: "Canva", icon: <BrainCircuit className="w-4 h-4 text-blue-400" /> },
+        { name: "MySQL", icon: <SiMysql className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "MongoDB", icon: <SiMongodb className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "Automation Anywhere", icon: <BrainCircuit className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "Figma", icon: <SiFigma className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "Excel", icon: <FaFileExcel className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "PowerPoint", icon: <FaFilePowerpoint className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "Git", icon: <Code2 className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "REST APIs", icon: <Server className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+      ],
+    },
+    {
+      title: "Technical Skills",
+      icon: <BrainCircuit className="w-5 h-5 text-red-600 dark:text-red-500" />,
+      skills: [
+        { name: "Data Structures and Algorithms (DSA)", icon: <Code2 className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "Machine Learning", icon: <BrainCircuit className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "Natural Language Processing (NLP)", icon: <BrainCircuit className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "Full Stack Development", icon: <Server className="w-4 h-4 text-red-600 dark:text-red-500" /> },
       ],
     },
     {
       title: "Soft Skills",
-      icon: <Users className="w-5 h-5 text-pink-400" />,
+      icon: <Users className="w-5 h-5 text-red-600 dark:text-red-500" />,
       skills: [
-        { name: "Problem-Solving", icon: <CheckCircle className="w-4 h-4 text-green-400" /> },
-        { name: "Adaptability", icon: <CheckCircle className="w-4 h-4 text-blue-400" /> },
-        { name: "Leadership", icon: <CheckCircle className="w-4 h-4 text-purple-400" /> },
-        { name: "Self-Motivation", icon: <CheckCircle className="w-4 h-4 text-orange-400" /> },
+        { name: "Problem Solving", icon: <CheckCircle className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "Adaptability", icon: <CheckCircle className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "Critical Thinking", icon: <CheckCircle className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "Teamwork", icon: <Users className="w-4 h-4 text-red-600 dark:text-red-500" /> },
+        { name: "Communication", icon: <CheckCircle className="w-4 h-4 text-red-600 dark:text-red-500" /> },
       ],
     },
   ];
 
   return (
-    <section id="skills" className="py-20 relative bg-background">
+    <section id="skills" className="py-20 relative bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -67,9 +84,9 @@ export function Skills() {
           className="text-center space-y-4 mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            My <span className="text-blue-600 dark:text-blue-400">Skills</span>
+            My <span className="text-red-600 dark:text-red-500">Skills</span>
           </h2>
-          <div className="h-1 w-20 bg-blue-600 dark:bg-blue-400 mx-auto rounded-full" />
+          <div className="h-1 w-20 bg-red-600 dark:bg-red-500 mx-auto rounded-full" />
         </motion.div>
 
         {/* Dynamic Grid Layout */}
@@ -82,32 +99,40 @@ export function Skills() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.02, y: -5 }}
-              className="group relative bg-[#0f172a]/80 dark:bg-[#0f172a] border border-blue-500/10 dark:border-white/5 rounded-2xl p-6 sm:p-8 overflow-hidden hover:border-blue-500/30 hover:shadow-2xl transition-all duration-300 shadow-lg"
+              className="group relative rounded-2xl p-[1px] overflow-hidden transition-all duration-300 shadow-lg hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]"
             >
-              {/* Subtle background glow effect on hover */}
-              <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-12 h-12 rounded-xl bg-background/50 border border-white/5 flex items-center justify-center shadow-inner">
-                  {category.icon}
-                </div>
-                <h3 className="text-xl font-bold text-foreground dark:text-white tracking-wide">
-                  {category.title}
-                </h3>
+              {/* Spinning light ball base */}
+              <div className="absolute inset-[-150%] animate-[spin_4s_linear_infinite]" style={{ transformOrigin: 'center center' }}>
+                 <div className="w-full h-full bg-[conic-gradient(from_0deg,transparent_0_280deg,#ef4444_360deg)] opacity-50 dark:opacity-100" />
               </div>
 
-              <div className="flex flex-wrap gap-3">
-                {category.skills.map((skill, skillIndex) => (
-                  <div
-                    key={skillIndex}
-                    className="flex text-sm items-center gap-2 px-3 py-2 bg-background/40 dark:bg-black/20 border border-black/5 dark:border-white/5 text-foreground/80 dark:text-blue-100 rounded-lg hover:bg-blue-500/10 hover:border-blue-500/30 hover:text-blue-600 dark:hover:text-blue-400 transition-all cursor-default shadow-sm group/skill"
-                  >
-                    <div className="group-hover/skill:scale-110 transition-transform">
-                      {skill.icon}
-                    </div>
-                    <span className="font-medium">{skill.name}</span>
+              {/* Inner card surface masking the middle */}
+              <div className="relative w-full h-full bg-zinc-50 dark:bg-zinc-950 rounded-2xl p-6 sm:p-8 z-10 flex flex-col">
+                {/* Subtle background glow effect on hover */}
+                <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-red-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="w-12 h-12 rounded-xl bg-background/50 border border-white/5 flex items-center justify-center shadow-inner">
+                    {category.icon}
                   </div>
-                ))}
+                  <h3 className="text-xl font-bold text-foreground dark:text-white tracking-wide">
+                    {category.title}
+                  </h3>
+                </div>
+
+                <div className="flex flex-wrap gap-3 mt-auto">
+                  {category.skills.map((skill, skillIndex) => (
+                    <div
+                      key={skillIndex}
+                      className="flex text-sm items-center gap-2 px-3 py-2 bg-background/40 dark:bg-black/20 border border-black/5 dark:border-white/5 text-foreground/80 dark:text-zinc-300 rounded-lg hover:bg-red-500/10 dark:hover:bg-red-500/10 hover:border-red-500/30 hover:text-red-600 dark:hover:text-red-400 transition-all cursor-default shadow-sm group/skill"
+                    >
+                      <div className="group-hover/skill:scale-110 transition-transform">
+                        {skill.icon}
+                      </div>
+                      <span className="font-medium">{skill.name}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </motion.div>
           ))}

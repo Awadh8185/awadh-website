@@ -33,7 +33,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 relative">
+    <section id="contact" className="py-20 relative bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,9 +43,9 @@ export function Contact() {
           className="text-center space-y-4 mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Get In <span className="text-blue-600 dark:text-blue-400">Touch</span>
+            Get In <span className="text-foreground dark:text-white">Touch</span>
           </h2>
-          <div className="h-1 w-20 bg-blue-600 dark:bg-blue-400 mx-auto rounded-full" />
+          <div className="h-1 w-20 bg-foreground dark:bg-white mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -66,54 +66,54 @@ export function Contact() {
 
             <div className="space-y-4">
               <a
-                href="tel:+919905751407"
-                className="flex items-center gap-4 text-foreground/80 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                href="tel:+919682021319"
+                className="flex items-center gap-4 text-foreground/80 hover:text-red-600 dark:hover:text-red-500 transition-colors"
               >
                 <div className="w-12 h-12 bg-foreground/5 rounded-full flex items-center justify-center">
                   <Phone className="w-5 h-5" />
                 </div>
-                <span className="text-lg font-medium">+91-9905751407</span>
+                <span className="text-lg font-medium">+91-9682021319</span>
               </a>
 
               <a
-                href="mailto:pragatip224@gmail.com"
-                className="flex items-center gap-4 text-foreground/80 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                href="mailto:awadh8185kishor@gmail.com"
+                className="flex items-center gap-4 text-foreground/80 hover:text-red-600 dark:hover:text-red-500 transition-colors"
               >
                 <div className="w-12 h-12 bg-foreground/5 rounded-full flex items-center justify-center">
                   <Mail className="w-5 h-5" />
                 </div>
-                <span className="text-lg font-medium">pragatip224@gmail.com</span>
+                <span className="text-lg font-medium">awadh8185kishor@gmail.com</span>
               </a>
 
               <a
-                href="https://github.com/Pragatipatel99"
+                href="https://github.com/Awadh8185"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 text-foreground/80 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="flex items-center gap-4 text-foreground/80 hover:text-red-600 dark:hover:text-red-500 transition-colors"
               >
                 <div className="w-12 h-12 bg-foreground/5 rounded-full flex items-center justify-center">
                   <Github className="w-5 h-5" />
                 </div>
-                <span className="text-lg font-medium">github.com/Pragatipatel99</span>
+                <span className="text-lg font-medium">github.com/Awadh8185</span>
               </a>
 
               <a
-                href="https://www.linkedin.com/in/pragati-03patel/"
+                href="https://www.linkedin.com/in/awadh8185"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 text-foreground/80 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="flex items-center gap-4 text-foreground/80 hover:text-red-600 dark:hover:text-red-500 transition-colors"
               >
                 <div className="w-12 h-12 bg-foreground/5 rounded-full flex items-center justify-center">
                   <Linkedin className="w-5 h-5" />
                 </div>
-                <span className="text-lg font-medium">linkedin.com/in/pragati-03patel</span>
+                <span className="text-lg font-medium">linkedin.com/in/awadh8185</span>
               </a>
             </div>
 
             <div className="pt-6">
               <a
                 href="/resume"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-500 px-8 py-4 text-sm font-bold tracking-wide transition-all hover:bg-blue-600 hover:text-white dark:hover:bg-blue-500 hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-foreground dark:border-white/20 text-foreground dark:text-white px-8 py-4 text-sm font-bold tracking-wide transition-all hover:bg-red-600 hover:text-white dark:hover:bg-red-500 hover:scale-105"
               >
                 <FileText className="w-5 h-5" />
                 View & Download Resume
@@ -130,7 +130,7 @@ export function Contact() {
           >
             <form onSubmit={sendEmail} className="space-y-6 bg-background rounded-2xl p-8 border border-foreground/10 shadow-lg relative overflow-hidden">
               {/* Optional background glow inside the form */}
-              <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-red-500/10 rounded-full blur-3xl pointer-events-none" />
 
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2 opacity-80">
@@ -141,8 +141,8 @@ export function Contact() {
                   id="name"
                   name="user_name"
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-foreground/5 focus:bg-background focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
-                  placeholder="Pragati Patel"
+                  className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-foreground/5 focus:bg-background focus:ring-2 focus:ring-red-500 dark:focus:ring-red-500 focus:border-transparent outline-none transition-all"
+                  placeholder="Awadh Kishor"
                 />
               </div>
 
@@ -155,8 +155,8 @@ export function Contact() {
                   id="email"
                   name="user_email"
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-foreground/5 focus:bg-background focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
-                  placeholder="pragatip224@gmail.com"
+                  className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-foreground/5 focus:bg-background focus:ring-2 focus:ring-red-500 dark:focus:ring-red-500 focus:border-transparent outline-none transition-all"
+                  placeholder="awadh8185kishor@gmail.com"
                 />
               </div>
 
@@ -169,15 +169,15 @@ export function Contact() {
                   name="message"
                   required
                   rows={5}
-                  className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-foreground/5 focus:bg-background focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
-                  placeholder="Hi Pragati, I'd like to talk about..."
+                  className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-foreground/5 focus:bg-background focus:ring-2 focus:ring-red-500 dark:focus:ring-red-500 focus:border-transparent outline-none transition-all resize-none"
+                  placeholder="Hi Awadh, I'd like to talk about..."
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="w-full flex items-center justify-center gap-2 rounded-lg bg-blue-600 text-white px-8 py-4 font-semibold transition-all hover:bg-blue-700 disabled:opacity-70 disabled:cursor-not-allowed"
+                className="w-full flex items-center justify-center gap-2 rounded-lg border-2 border-red-600 dark:border-red-500 text-red-600 dark:text-red-500 bg-transparent px-8 py-4 font-semibold transition-all hover:bg-red-600 hover:text-white dark:hover:bg-red-500 dark:hover:text-black focus:outline-none focus:ring-2 focus:ring-red-500 disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 {status === "loading" ? (
                   <span className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></span>

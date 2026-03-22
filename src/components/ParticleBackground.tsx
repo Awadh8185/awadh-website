@@ -52,12 +52,12 @@ export function ParticleBackground() {
 
     const init = () => {
       particles = [];
-      const particleCount = Math.floor((canvas.width * canvas.height) / 10000); // Responsive density
+      const particleCount = Math.floor((canvas.width * canvas.height) / 4000); // Higher density
       const isDark = resolvedTheme === "dark";
       
       const colors = isDark 
-        ? ["rgba(99, 102, 241, 0.5)", "rgba(168, 85, 247, 0.5)", "rgba(255, 255, 255, 0.2)"] // Dark mode colors (indigo, purple, faint white)
-        : ["rgba(37, 99, 235, 0.4)", "rgba(147, 51, 234, 0.4)", "rgba(0, 0, 0, 0.1)"]; // Light mode colors (blue, purple, faint black)
+        ? ["rgba(239, 68, 68, 0.6)", "rgba(220, 38, 38, 0.7)", "rgba(248, 113, 113, 0.5)"] // Bright Red
+        : ["rgba(239, 68, 68, 0.4)", "rgba(220, 38, 38, 0.5)", "rgba(248, 113, 113, 0.4)"]; // Softer Red
 
       for (let i = 0; i < particleCount; i++) {
         const x = Math.random() * canvas.width;
@@ -103,26 +103,49 @@ export function ParticleBackground() {
         if (distance < mouse.radius) {
           p.x -= directionX;
           p.y -= directionY;
+          
+          // Connect particle directly to the mouse cursor (spider-web interaction core)
+          ctx.beginPath();
+          ctx.strokeStyle = `rgba(239, 68, 68, ${0.8 - distance / mouse.radius})`;
+          ctx.lineWidth = 1.0;
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(mouse.x, mouse.y);
+          ctx.stroke();
         } else {
           // Return to base position
           if (p.x !== p.baseX) {
             const dx = p.x - p.baseX;
-            p.x -= dx / 10;
+            p.x -= dx / 15;
           }
           if (p.y !== p.baseY) {
             const dy = p.y - p.baseY;
-            p.y -= dy / 10;
+            p.y -= dy / 15;
           }
         }
 
-        // Draw particle
+        // Draw particle node
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
         ctx.closePath();
         ctx.fillStyle = p.color;
         ctx.fill();
-        
-        // Connect nearby particles lightly if close to mouse for extra effect (optional)
+
+        // Connect nearby particles lightly to form the structural web
+        for (let j = i + 1; j < particles.length; j++) {
+          const p2 = particles[j];
+          const distx = p.x - p2.x;
+          const disty = p.y - p2.y;
+          const dist = Math.sqrt(distx * distx + disty * disty);
+          
+          if (dist < 120) {
+            ctx.beginPath();
+            ctx.strokeStyle = `rgba(239, 68, 68, ${0.4 * (1 - dist / 120)})`; // Red web opacity falloff
+            ctx.lineWidth = 0.8;
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.stroke();
+          }
+        }
       }
 
       animationFrameId = requestAnimationFrame(animate);
@@ -146,7 +169,7 @@ export function ParticleBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 z-0 pointer-events-none"
+      className="fixed inset-0 pointer-events-none z-0"
       style={{ width: "100%", height: "100%" }}
     />
   );

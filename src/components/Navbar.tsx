@@ -36,7 +36,7 @@ export function Navbar() {
         <div className="flex h-20 items-center justify-between">
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center gap-2">
-              <span className="text-2xl font-bold tracking-tighter">P. Patel</span>
+              <span className="text-2xl font-bold tracking-tighter">A. Kishor</span>
             </a>
           </div>
 
@@ -47,7 +47,7 @@ export function Navbar() {
                 <li key={link.name}>
                   <a 
                     href={link.href} 
-                    className="text-sm font-medium hover:text-blue-500 transition-colors"
+                    className="text-sm font-medium hover:text-red-500 transition-colors"
                   >
                     {link.name}
                   </a>
