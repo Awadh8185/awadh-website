@@ -18,11 +18,11 @@ export function Certifications() {
 
   const certs = [
     {
-      title: "Full Stack Development - Training",
-      issuer: "Lovely Professional University",
-      date: "",
-      description: "Completed training in React.js, Node.js, Express.js, MongoDB, REST API Development, and Authentication Systems.",
-      link: "#"
+      title: "Essentials Automation Professional",
+      issuer: "Automation Anywhere",
+      date: "Dec 2025 - Dec 2027",
+      description: "Developed foundational skills in Robotic Process Automation (RPA), including creating bots, automating repetitive tasks, and managing workflows using the Automation Anywhere platform.",
+      link: "/automation%20anywhrre.jpg"
     },
     {
       title: "Cloud Computing",
