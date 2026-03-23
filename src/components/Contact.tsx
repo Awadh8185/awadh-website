@@ -113,7 +113,7 @@ export function Contact() {
             <div className="pt-6">
               <a
                 href="/resume"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-foreground dark:border-white/20 text-foreground dark:text-white px-8 py-4 text-sm font-bold tracking-wide transition-all hover:bg-red-600 hover:text-white dark:hover:bg-red-500 hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-transparent bg-red-600 text-white px-8 py-4 text-sm font-bold tracking-wide transition-all shadow-md hover:bg-red-700 hover:shadow-red-500/25 hover:scale-105"
               >
                 <FileText className="w-5 h-5" />
                 View & Download Resume
