@@ -10,7 +10,7 @@ export function Projects() {
       description:
         "Developed an interactive music streaming platform where users can explore songs, browse playlists, and enjoy seamless audio playback. Features: Song browsing, Playlist creation, Artist-based search, Responsive user interface, Smooth audio streaming.",
       tags: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/Awadh8185",
+      github: "https://github.com/Awadh8185/musicHUB",
       demo: "#",
       date: ""
     },
@@ -19,7 +19,7 @@ export function Projects() {
       description:
         "Built an interactive resume builder website that allows users to create, edit, and download professional resumes easily. Features: Customizable templates, Form-based data entry, Real-time preview, PDF download, Responsive design.",
       tags: ["HTML", "CSS", "JavaScript", "MERN Stack"],
-      github: "https://github.com/Awadh8185",
+      github: "https://github.com/Awadh8185/portfolio1",
       demo: "#",
       date: ""
     },
@@ -28,7 +28,7 @@ export function Projects() {
       description:
         "Developed a machine learning system that automatically groups public complaints into meaningful categories using clustering algorithms. Features: Text preprocessing, Feature extraction using NLP, K-Means clustering, Data visualization.",
       tags: ["Python", "Scikit-learn", "Pandas", "NumPy", "TF-IDF", "Matplotlib"],
-      github: "https://github.com/Awadh8185",
+      github: "https://github.com/Awadh8185/machine-learning-public-complain-clustering-model",
       demo: "#",
       date: ""
     },
