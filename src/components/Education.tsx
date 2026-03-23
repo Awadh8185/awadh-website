@@ -61,7 +61,7 @@ export function Education() {
                 <div className="absolute inset-[-150%] animate-[spin_4s_linear_infinite]" style={{ transformOrigin: 'center center' }}>
                    <div className="w-full h-full bg-[conic-gradient(from_0deg,transparent_0_280deg,#ef4444_360deg)] opacity-70" />
                 </div>
-                <div className="relative w-full h-full bg-zinc-50 dark:bg-zinc-950 rounded-2xl p-6 sm:p-8 z-10 flex flex-col">
+                <div className="relative w-full h-full bg-card-bg rounded-2xl p-6 sm:p-8 z-10 flex flex-col">
                   <div className="hidden sm:flex absolute -left-[53px] top-8 w-12 items-center justify-center z-20">
                     <div className="w-4 h-4 rounded-full bg-red-600 dark:bg-red-500 border-4 border-background dark:border-background z-10 group-hover:scale-125 transition-transform" />
                     <div className="absolute top-0 bottom-0 left-1/2 -ml-px w-0.5 bg-foreground/10 -z-10 h-full" />

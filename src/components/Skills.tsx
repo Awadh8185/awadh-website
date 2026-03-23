@@ -107,15 +107,15 @@ export function Skills() {
               </div>
 
               {/* Inner card surface masking the middle */}
-              <div className="relative w-full h-full bg-zinc-50 dark:bg-zinc-950 rounded-2xl p-6 sm:p-8 z-10 flex flex-col">
+              <div className="relative w-full h-full bg-card-bg rounded-2xl p-6 sm:p-8 z-10 flex flex-col">
                 {/* Subtle background glow effect on hover */}
                 <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-red-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
                 <div className="flex items-center gap-4 mb-8">
-                  <div className="w-12 h-12 rounded-xl bg-background/50 border border-white/5 flex items-center justify-center shadow-inner">
+                  <div className="w-12 h-12 rounded-xl bg-foreground/5 border border-foreground/10 flex items-center justify-center shadow-inner">
                     {category.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-foreground dark:text-white tracking-wide">
+                  <h3 className="text-xl font-bold text-foreground tracking-wide">
                     {category.title}
                   </h3>
                 </div>
@@ -124,7 +124,7 @@ export function Skills() {
                   {category.skills.map((skill, skillIndex) => (
                     <div
                       key={skillIndex}
-                      className="flex text-sm items-center gap-2 px-3 py-2 bg-background/40 dark:bg-black/20 border border-black/5 dark:border-white/5 text-foreground/80 dark:text-zinc-300 rounded-lg hover:bg-red-500/10 dark:hover:bg-red-500/10 hover:border-red-500/30 hover:text-red-600 dark:hover:text-red-400 transition-all cursor-default shadow-sm group/skill"
+                      className="flex text-sm items-center gap-2 px-3 py-2 bg-foreground/5 border border-foreground/10 text-foreground/80 rounded-lg hover:bg-red-500/10 hover:border-red-500/30 hover:text-red-600 transition-all cursor-default shadow-sm group/skill"
                     >
                       <div className="group-hover/skill:scale-110 transition-transform">
                         {skill.icon}

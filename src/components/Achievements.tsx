@@ -53,7 +53,7 @@ export function Achievements() {
                 <div className="absolute inset-[-150%] animate-[spin_4s_linear_infinite]" style={{ transformOrigin: 'center center' }}>
                    <div className="w-full h-full bg-[conic-gradient(from_0deg,transparent_0_280deg,#ef4444_360deg)] opacity-70" />
                 </div>
-                <div className="relative w-full h-full bg-zinc-50 dark:bg-zinc-950 rounded-2xl p-8 z-10 flex flex-col items-center">
+                <div className="relative w-full h-full bg-card-bg rounded-2xl p-8 z-10 flex flex-col items-center">
                   <div className={`w-16 h-16 ${item.bgColor} ${item.color} rounded-2xl flex items-center justify-center mx-auto mb-6 rotate-3 group-hover:rotate-6 transition-transform`}>
                     <Icon className="w-8 h-8" />
                   </div>

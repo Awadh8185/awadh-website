@@ -79,7 +79,7 @@ export function About() {
                   <div className="absolute inset-[-150%] animate-[spin_4s_linear_infinite]" style={{ transformOrigin: 'center center' }}>
                      <div className="w-full h-full bg-[conic-gradient(from_0deg,transparent_0_280deg,#ef4444_360deg)] opacity-70" />
                   </div>
-                  <div className="relative w-full h-full bg-zinc-50 dark:bg-zinc-950 rounded-2xl p-6 z-10 flex flex-col">
+                  <div className="relative w-full h-full bg-card-bg rounded-2xl p-6 z-10 flex flex-col">
                     <Icon className="h-8 w-8 text-red-600 dark:text-red-500 mb-4" />
                     <h3 className="font-semibold text-lg mb-2">{interest.title}</h3>
                     <p className="text-sm text-foreground/60">{interest.desc}</p>

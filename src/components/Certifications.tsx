@@ -83,7 +83,7 @@ export function Certifications() {
               <div className="absolute inset-[-150%] animate-[spin_4s_linear_infinite]" style={{ transformOrigin: 'center center' }}>
                  <div className="w-full h-full bg-[conic-gradient(from_0deg,transparent_0_280deg,#ef4444_360deg)] opacity-70" />
               </div>
-              <div className="relative w-full h-full bg-zinc-50 dark:bg-zinc-950 rounded-2xl p-6 md:p-8 z-10 flex gap-6 items-start">
+              <div className="relative w-full h-full bg-card-bg rounded-2xl p-6 md:p-8 z-10 flex gap-6 items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-red-500/10 rounded-full flex items-center justify-center text-red-600 dark:text-red-500 mt-1">
                   <Award className="w-6 h-6" />
                 </div>
